@@ -9,11 +9,11 @@ import time
 
 ###################    yolov5的组件(我采用的是onnx文件)    ###############################
 
-class YOLOv7:
-    def __init__(self, path, conf_thres=0.7, iou_thres=0.5):
+class YOLOv5:
+    def __init__(self, path, conf_thres=0.5, iou_thres=0.5):
         self.conf_threshold = conf_thres
         self.iou_threshold = iou_thres
-        self.class_names = list(map(lambda x: x.strip(), open('coco.names', 'r').readlines()))
+        self.class_names = list(map(lambda x: x.strip(), open('../coco.names', 'r').readlines()))
         # Initialize model
         self.session = onnxruntime.InferenceSession(path, providers=['CUDAExecutionProvider', 'CPUExecutionProvider'])
         model_inputs = self.session.get_inputs()
