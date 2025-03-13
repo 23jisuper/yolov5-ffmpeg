@@ -5,7 +5,7 @@ import imutils
 from FlowPuser import StreamPusher
 from Yolov5Compents import YOLOv5
 
-rtmp_server = 'rtmp://10.16.16.10:1935/video'
+rtmp_server = 'rtmp://你的IP地址:1935/video'
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
