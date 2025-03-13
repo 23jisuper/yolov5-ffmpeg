@@ -4,7 +4,7 @@ import subprocess
 ##########################    定义推流器      ###################################
 
 class StreamPusher:
-    def __init__(self, rtmp_url):       #接受一个参数rtmq_url 该参数受用于指定rtmq服务器地址的字符串
+    def __init__(self, rtmp_url):        #接受一个参数rtmq_url 该参数受用于指定rtmq服务器地址的字符串
         # 创建FFmpeg命令行参数
         ffmpeg_cmd = ['ffmpeg',
                       '-y',  # 覆盖已存在的文件

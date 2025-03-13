@@ -10,7 +10,7 @@ rtmp_server = 'rtmp://10.16.16.10:1935/video'
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--imgpath', type=str, default='0', help="image path or camera index")
-    parser.add_argument('--modelpath', type=str, default='models/yolov5s.onnx', help="onnx filepath")
+    parser.add_argument('--modelpath', type=str, default='../models/yolov5s.onnx', help="onnx filepath")
     parser.add_argument('--confThreshold', default=0.3, type=float, help='class confidence')
     parser.add_argument('--nmsThreshold', default=0.5, type=float, help='nms iou thresh')
     args = parser.parse_args()
