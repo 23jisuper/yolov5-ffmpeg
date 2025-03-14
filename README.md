@@ -8,5 +8,4 @@
 - rtmp_server='rtmp://你的ip地址：1935/video'
 ### 2.3 运行rtsp服务器，再运行main.py,最后采用vlc的网络串口进行拉流
 ## 3.效果展示
-
 ![image](https://github.com/23jisuper/yolov5-ffmpeg/blob/master/resultImage/test.gif)
